@@ -9,12 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tabler/icons": "^1.58.0",
+    "classnames": "^2.3.1",
     "next": "12.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "autoprefixer": "^10.4.4",
     "eslint": "8.11.0",
-    "eslint-config-next": "12.1.1"
+    "eslint-config-next": "12.1.1",
+    "postcss": "^8.4.12",
+    "sass": "^1.49.9",
+    "tailwindcss": "^3.0.23"
   }
 }

@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "reset";
+@import "font";
+@import "utils";
+@import "variables";
+
+@import "ui/buttons";
+@import "ui/typography";
+@import "ui/menu";
+@import "ui/logo";
+
+@import "page/hero";
+@import "page/footer";

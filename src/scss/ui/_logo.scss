@@ -1,0 +1,7 @@
+.logo {
+  @include link-reset;
+  text-align: center;
+  font-size: $logo-font-size;
+  color: $logo-color;
+  font-weight: 900;
+}

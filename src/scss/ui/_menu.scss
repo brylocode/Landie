@@ -1,0 +1,65 @@
+.menu {
+  position: relative;
+
+  &-btn {
+    display: flex;
+    cursor: pointer;
+    z-index: 1010;
+    @media (min-width: $breakpoint-desktop) {
+      display: none;
+    }
+  }
+
+  &-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: $menu-list-background;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    box-shadow: $menu-list-box-shadow;
+    border-radius: $menu-list-border-radius;
+
+    @media (min-width: $breakpoint-desktop) {
+      position: static;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      box-shadow: none;
+      gap: 60px;
+    }
+  }
+
+  &-item {
+    padding: 1rem 2rem;
+    text-align: center;
+    @media (min-width: $breakpoint-desktop) {
+      padding: 0;
+    }
+  }
+
+  &-link {
+    --font-size: #{$menu-link-font-size};
+    @include link-reset;
+    color: $menu-link-color;
+    font-weight: 700;
+    font-size: var(--font-size);
+    @media (min-width: $breakpoint-desktop) {
+      --font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
+
+.menu-open {
+  .menu-list {
+    display: flex;
+  }
+}

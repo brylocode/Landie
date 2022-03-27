@@ -1,0 +1,69 @@
+button {
+  all: initial;
+  font-family: inherit;
+}
+
+.btn {
+  padding: $btn-padding-y $btn-padding-x;
+  border-radius: $btn-border-radius;
+  font-size: $btn-font-size;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: $btn-primary-background-color;
+  color: $btn-primary-color;
+}
+
+.btn-sm {
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+}
+
+.btn-md {
+  font-size: $font-size-md;
+  line-height: $line-height-md;
+}
+
+.btn-xl {
+  padding-top: calc(#{$btn-padding-y} + 1px);
+  padding-bottom: calc(#{$btn-padding-y} + 1px);
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+.btn-wide {
+  &.btn-sm {
+    min-width: calc(160px - 2 * $btn-padding-x);
+  }
+
+  &.btn-md {
+    min-width: calc(160px - 2 * $btn-padding-x);
+  }
+
+  &.btn-xl {
+    min-width: calc(189px - 2 * $btn-padding-x);
+  }
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: $btn-border-width solid $btn-secondary-color;
+  color: $btn-secondary-color;
+  padding-top: calc(#{$btn-padding-y} - #{$btn-border-width});
+  padding-bottom: calc(#{$btn-padding-y} - #{$btn-border-width});
+
+  &.btn-sm {
+    min-width: calc(160px - 2 * $btn-padding-x - 2 * $btn-border-width);
+  }
+
+  &.btn-md {
+    min-width: calc(160px - 2 * $btn-padding-x - 2 * $btn-border-width);
+  }
+
+  &.btn-xl {
+    min-width: calc(189px - 2 * $btn-padding-x - 2 * $btn-border-width);
+  }
+}
